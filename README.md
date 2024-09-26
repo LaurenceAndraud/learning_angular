@@ -1,27 +1,39 @@
-# GestionBook
+# Book Management App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+## Overview
 
-## Development server
+This is a simple book management application built with Angular. The application allows users to manage a list of books, including functionalities for viewing, adding, editing, and deleting books. It is designed to provide a user-friendly interface and make it easy for users to keep track of their book collection.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- View the list of books
+- Add new books to the collection
+- Edit existing book details
+- Delete books from the collection
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
 
-## Build
+- **Angular**: A platform for building web applications.
+- **CSS**: For styling the application.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+Follow these steps to set up the project on your local machine:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone the Repository:**
 
-## Running end-to-end tests
+   ```bash
+   git clone https://github.com/your-username/book-management-app.git
+   cd book-management-app
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. **Install Dependencies:**
 
-## Further help
+Make sure you have Node.js installed. Then, run the following command to install the required dependencies:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    ```bash
+    npm install
+
+3. **Serve the App:**
+    
+    ```bash
+    ng serve
