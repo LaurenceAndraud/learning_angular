@@ -1,0 +1,14 @@
+<h2>Ajouter un livre</h2>
+<form (ngSubmit)="addBook()">
+  <label>Titre:</label>
+  <input [(ngModel)]="newBook.title" name="title" required>
+  
+  <label>Auteur:</label>
+  <input [(ngModel)]="newBook.author" name="author" required>
+  
+  <label>Description:</label>
+  <textarea [(ngModel)]="newBook.description" name="description"></textarea>
+  
+  <button type="submit">Ajouter</button>
+</form>
+

@@ -1,1 +1,11 @@
-<p>book-list works!</p>
+<div>
+    <h2>Liste des Livres</h2>
+    <ul>
+      <li *ngFor="let book of books">
+        {{ book.title }} par {{ book.author }}
+        <button (click)="editBook(book)">Éditer</button>
+        <button (click)="deleteBook(book.id)">Supprimer</button>
+      </li>
+    </ul>
+  </div>
+  
