@@ -1,29 +1,26 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AuthService } from '../auth.service';
-import { Router } from '@angular/router'; 
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [FormsModule],
+  standalone: true, 
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  imports: [FormsModule, CommonModule] 
 })
 export class LoginComponent {
-  email: string = '';
+  username: string = '';
   password: string = '';
-
-  constructor(private authService: AuthService) {} 
+  successMessage: string = '';
+  errorMessage: string = '';
 
   onLogin() {
-    this.authService.login(this.email, this.password).subscribe(
-      response => {
-        console.log('Login successful', response);
-      },
-      error => {
-        console.error('Login failed', error);
-      }
-    );
+    if (this.username && this.password) {
+      this.successMessage = "Vous êtes connecté" + this.username + "!";
+      this.errorMessage = '';
+    } else {
+      this.errorMessage = "Veuillez entrer un nom d’utilisateur et un mot de passe valides.";
+      this.successMessage = '';
+    }
   }
 }

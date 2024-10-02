@@ -1,12 +1,14 @@
+<h2>Register</h2>
 <form (ngSubmit)="onRegister()" #registerForm="ngForm">
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" required [(ngModel)]="email" name="email" id="email" />
-    </div>
-    <div>
-      <label for="password">Password:</label>
-      <input type="password" required [(ngModel)]="password" name="password" id="password" />
-    </div>
-    <button type="submit" [disabled]="!registerForm.valid">Register</button>
-  </form>
-  
+  <label for="username">Username:</label>
+  <input type="text" required [(ngModel)]="username" name="username" id="username">
+
+  <label for="password">Password:</label>
+  <input type="password" required [(ngModel)]="password" name="password" id="password">
+
+  <button type="submit">Register</button>
+</form>
+
+<!-- Affichage d'un message de succès ou d'erreur -->
+<div *ngIf="successMessage" style="color: green;">{{ successMessage }}</div>
+<div *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</div>

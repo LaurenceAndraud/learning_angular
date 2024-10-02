@@ -23,7 +23,7 @@ Follow these steps to set up the project on your local machine:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/book-management-app.git
+   git clone https://github.com/LaurenceAndraud/book-management-app.git
    cd book-management-app
 
 2. **Install Dependencies:**
@@ -40,5 +40,6 @@ Make sure you have Node.js installed. Then, run the following command to install
 
 4. **To do list**
 
-- fix bug for authentification
+- fix bug for editing a book
+- add a real users bdd
 - adding tests
