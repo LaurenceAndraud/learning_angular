@@ -37,3 +37,8 @@ Make sure you have Node.js installed. Then, run the following command to install
     
     ```bash
     ng serve
+
+4. **To do list**
+
+- fix bug for authentification
+- adding tests
