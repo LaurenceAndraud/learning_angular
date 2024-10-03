@@ -6,9 +6,10 @@
   <label>Auteur:</label>
   <input [(ngModel)]="newBook.author" name="author" required>
   
-  <label>Description:</label>
-  <textarea [(ngModel)]="newBook.description" name="description"></textarea>
-  
   <button type="submit">Ajouter</button>
 </form>
+
+<!--Affichage des messages de succès ou d'erreur-->
+<div *ngIf="successMessage" style="color: green;">{{ successMessage }}</div>
+<div *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</div>
 

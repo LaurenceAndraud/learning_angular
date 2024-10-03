@@ -7,8 +7,8 @@ import { Book } from '../models/book';
 })
 export class BookService {
   private books: Book[] = [
-    { id: 1, title: 'Angular Essentials', author: 'Max Schwarzmüller' },
-    { id: 2, title: 'Mastering TypeScript', author: 'Nathan Rozentals' }
+    { id: 1, title: 'Stupeurs et tremblement', author: 'Amélie Nothomb' },
+    { id: 2, title: 'Guerre et Paix', author: 'Tolstoï' }
   ];
 
   constructor() {}
@@ -18,9 +18,10 @@ export class BookService {
     return of(this.books);
   }
 
-  // Créer un livre
-  addBook(book: Book): void {
+  // Ajouter un livre
+  addBook(book: Book): Observable<Book> {
     this.books.push(book);
+    return of(book);
   }
 
   // Mettre à jour un livre
