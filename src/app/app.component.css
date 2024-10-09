@@ -1,0 +1,23 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    gap: 15px;
+}
+
+.navigation-card {
+    width: calc(40% - 15px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+mat-card-header {
+    margin: 0 auto;
+}

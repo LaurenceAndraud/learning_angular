@@ -1,0 +1,20 @@
+.header {
+    position: relative;
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    padding: 10px 0;
+}
+
+.header-image-container {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    max-height: 200px;
+}
