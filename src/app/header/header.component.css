@@ -12,9 +12,11 @@
     padding: 10px 0;
 }
 
-.header-image-container {
-    width: 100%;
-    overflow: hidden;
-    object-fit: cover;
-    max-height: 200px;
+.left-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.right-buttons {
+    margin-left: auto;
 }
